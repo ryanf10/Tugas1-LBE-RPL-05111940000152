@@ -1,0 +1,203 @@
+body {
+  position: relative;
+  max-width: 1050px;
+  height: 1600px;
+  margin: auto;
+}
+
+#sidebar {
+  float: left;
+  width: 500px;
+  height: 700px;
+  background-color: #ebab34;
+  border-right: 2px solid gray;
+}
+#main {
+  float: left;
+  width: 500px;
+  height: 1000px;
+  background-color: #ffffff;
+}
+
+body {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p {
+  margin-left: 10%;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+dd {
+  margin-top: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#skillhighlight ul li {
+  margin-left: 10%;
+}
+
+#language ul li {
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+#summary p {
+  margin-right: 10%;
+}
+
+ul li {
+  margin-top: 1%;
+}
+
+ul {
+  margin-left: -3%;
+}
+
+#additional,
+#education,
+#employment {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#arrowadditional,
+#arroweducation,
+#arrowemployment {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+
+#summary,
+#language,
+#contact,
+#profile {
+  text-align: right;
+}
+
+#jumbotron {
+  background-image: url("../img/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 400px;
+  position: relative;
+}
+
+@keyframes rotate {
+  from {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 100;
+    transform: rotate(360deg);
+  }
+}
+
+.pasfoto {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin: auto auto;
+  background-color: black;
+
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.nama {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+
+  text-align: center;
+  color: white;
+}
+
+@keyframes move {
+  from {
+    top: 125px;
+    left: 425px;
+  }
+  to {
+    top: 50;
+    left: 50;
+  }
+}
+
+@keyframes move2 {
+  from {
+    bottom: 125px;
+    right: 425px;
+  }
+  to {
+    bottom: 50;
+    right: 50;
+  }
+}
+
+#decorationleft {
+  border-left: 5px solid white;
+  border-top: 5px solid white;
+
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  top: 50px;
+  left: 50px;
+
+  animation-name: move;
+  animation-duration: 1s;
+}
+
+#decorationright {
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+
+  width: 100px;
+  height: 100px;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+
+  animation-name: move2;
+  animation-duration: 1s;
+}
