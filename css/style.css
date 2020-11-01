@@ -8,7 +8,7 @@ body {
 #sidebar {
   float: left;
   width: 500px;
-  height: 700px;
+  height: 1000px;
   background-color: #ebab34;
   border-right: 2px solid gray;
 }
@@ -60,7 +60,8 @@ dd {
   margin-right: 10%;
 }
 
-#skillhighlight ul li {
+#skillhighlight ul li,
+#training ul li {
   margin-left: 10%;
 }
 
